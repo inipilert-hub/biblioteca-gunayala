@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual - Guna Yala</title>
+    <style>
+        :root {
+            --primary: #1b4332;
+            --accent: #d4a373;
+            --bg-color: #f8f9fa;
+            --text-color: #2b2d42;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.3rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .intro {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+            border-top: 4px solid var(--primary);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+        .card p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #2d6a4f;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            background-color: #e9ecef;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteca Virtual Comunitaria</h1>
+        <p>Comunidad de Guna Yala - Repositorio Educativo Local</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Bienvenidos al espacio digital de aprendizaje</h2>
+            <p>Plataforma educativa local diseñada para impulsar el conocimiento académico y preservar nuestra identidad cultural sin depender de internet.</p>
+        </div>
+
+        <div class="grid">
+            <!-- Sección 1 -->
+            <div class="card">
+    <div>
+        <h3>🔬 Material Educativo para Investigación</h3>
+        <p>Libros de biología, física, ciencias, geografía, historia, matemáticas, cálculos y textos oficiales digitalizados del gobierno.</p>
+    </div>
+    <a href="investigacion/" class="btn">Explorar Materiales</a>
+</div>
+
+            <!-- Sección 2 -->
+            <div class="card">
+                <div>
+                    <h3>🪶 Cultura e Identidad Guna Yala</h3>
+                    <p>Cuentos tradicionales, historia, recopilaciones musicales y videos representativos de nuestra cultura.</p>
+                </div>
+                <a href="cultura/" class="btn">Entrar a la sala</a>
+            </div>
+
+            <!-- Sección 3 -->
+            <div class="card">
+                <div>
+                    <h3>🎯 Material de Reforzamiento</h3>
+                    <p>Tests interactivos de nivelación para identificar áreas de mejora y acceder a clases guiadas de refuerzo escolar.</p>
+                </div>
+                <a href="#" class="btn">Practicar y Aprender</a>
+            </div>
+
+            <!-- Sección 4 -->
+            <div class="card">
+                <div>
+                    <h3>📖 Diccionario Guna</h3>
+                    <p>Consulta interactiva de palabras en Guna para verificar su correcta escritura, significado y pronunciación.</p>
+                </div>
+                <a href="#" class="btn">Consultar Diccionario</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Servidor Local Ubuntu - Guna Yala &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
